@@ -6,9 +6,25 @@ const Header = styled.header`
   background-position: center;
 `;
 
-const Container = styled.div`
+const Menu = styled.nav`
   padding: 10px 50px;
   height: 100px;
 `;
 
-export { Header, Container };
+const List = styled.ul`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Item = styled.li`
+  font-size: 36px;
+  color: #fff;
+`;
+
+const Cart = styled.li`
+  width: 60px;
+  height: 60px;
+  background-color: #dc3545;
+`;
+
+export { Header, Menu, List, Item, Cart };
