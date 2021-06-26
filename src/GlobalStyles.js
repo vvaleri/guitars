@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Gin-Regular';
     src: local('Gin-Regular'), url('./fonts/Gin-Regular.woff'), format('woff');
+    src: local('Gin-Regular'), url('./fonts/Gin-Regular.woff2'), format('woff2');
   }
 
   * {

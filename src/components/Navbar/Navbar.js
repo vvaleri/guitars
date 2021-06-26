@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { Header, Menu, List, Item, Cart } from './style/navbar';
+import { Header, Menu, List, Item, Cart, Number } from './style/navbar';
 
 export function Navbar() {
   return (
@@ -10,7 +10,10 @@ export function Navbar() {
             <NavLink exact to="/">Guitars</NavLink>
           </Item>
           <Cart>
-            <NavLink exact to="/cart">0</NavLink>
+            <NavLink exact to="/cart">
+              <img src="./img/shopping-cart.svg" alt="shopping cart" />
+              <Number>0</Number>
+            </NavLink>
           </Cart>
         </List>
       </Menu>
