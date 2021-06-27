@@ -1,4 +1,4 @@
 import { Navbar } from './Navbar/Navbar';
-import { Home } from './Home/Home';
+import { Products } from './Products/Products';
 
-export { Navbar, Home };
+export { Navbar, Products };

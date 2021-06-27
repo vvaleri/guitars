@@ -16,6 +16,8 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     overflow-x: hidden;
+    height: 100vh;
+    background-image: url('./img/body-bg.png');
   }
 
   li {
