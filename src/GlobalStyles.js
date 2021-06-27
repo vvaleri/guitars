@@ -23,4 +23,9 @@ export const GlobalStyles = createGlobalStyle`
   li {
     list-style: none;
   }
+
+  img {
+    max-width: 100%;
+    display: block;
+}
 `;

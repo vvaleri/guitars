@@ -6,8 +6,16 @@ const Main = styled.main`
   margin: 0 auto;
 `;
 
+const MainTitle = styled.h1`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+`;
+
 const ProductsList = styled.ul`
   display: flex;
 `;
 
-export { Main, ProductsList };
+export { Main, ProductsList, MainTitle };

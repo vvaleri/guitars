@@ -1,10 +1,12 @@
-import { Main, ProductsList } from './style/products';
+import { ProductCard } from '../ProductCard/ProductCard';
+import { Main, ProductsList, MainTitle } from './style/products';
 
 export function Products() {
   return (
     <Main>
+      <MainTitle>Demo guitars shop</MainTitle>
       <ProductsList>
-        home
+        <ProductCard />
       </ProductsList>
     </Main>
   );
