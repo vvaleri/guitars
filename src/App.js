@@ -1,5 +1,5 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Navbar, Products } from './components';
+import { Navbar, Products, Cart } from './components';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Products} />
+        <Route path="/cart" exact component={Cart} />
       </Switch>
     </BrowserRouter>
 
