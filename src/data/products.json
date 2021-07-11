@@ -1,0 +1,21 @@
+
+[
+        {
+            "id": "1",
+            "name": "Ibanez JGM5 Jon Gomm Signature Acoustic Guitar",
+            "price": "123",
+            "img": "./img/guitar-img-1.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Gretsch Electromatic G5022CWFE Rancher Falcon Jumbo Guitar White",
+            "price": "13",
+            "img": "./img/guitar-img-1.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Faith Guitars Blood Moon Series Neptune Electro Acoustic with Cutaway",
+            "price": "12",
+            "img": "./img/guitar-img-1.jpg"
+        }
+]
