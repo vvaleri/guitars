@@ -9,7 +9,8 @@ export function ProductCard({ product }) {
       id: product.id,
       name: product.name,
       price: product.price,
-      img: product.img
+      img: product.img,
+      quantity: 1
     };
     dispatch({ type: 'ADD_TO_CART', payload: productItem });
   };
