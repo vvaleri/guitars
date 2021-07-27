@@ -25,6 +25,8 @@
         "object-curly-newline": ["error", { "consistent": true }],
         "react/prop-types": "off",
         "no-unused-vars": "off",
-        "no-confusing-arrow": "off"
+        "no-confusing-arrow": "off",
+        "no-return-assign": "off",
+        "no-param-reassign": "off"
       }
 }
