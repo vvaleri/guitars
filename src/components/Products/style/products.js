@@ -1,11 +1,9 @@
 import styled from 'styled-components/macro';
 
-const Main = styled.main``;
-
-const MainTitle = styled.h1``;
-
 const ProductsList = styled.ul`
   display: flex;
+  width: calc(100% + 35px);
+  margin-bottom: -35px;
 `;
 
-export { Main, ProductsList, MainTitle };
+export { ProductsList };

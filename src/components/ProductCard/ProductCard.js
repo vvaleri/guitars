@@ -17,7 +17,7 @@ export function ProductCard({ product }) {
 
   return (
     <Item>
-      <Img><img src={product.img} alt="Blood Moon" /></Img>
+      <Img><img src={product.img} alt={product.alt} /></Img>
       <Content>
         <Title>{product.name}</Title>
         <Price>

@@ -4,6 +4,9 @@ const Item = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: calc(33.3% - 35px);
+  margin-right: 35px;
+  margin-bottom: 35px;
   background-color: #fff;
 `;
 
@@ -21,6 +24,7 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 10px 20px;
+  height: 100%;
 `;
 
 const Title = styled.h2`
@@ -28,12 +32,16 @@ const Title = styled.h2`
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
 `;
 
 const Price = styled.p`
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
   font-size: 32px;
   font-weight: 700;
+  flex: 1 0 auto;
 `;
 
 const Buttons = styled.div`

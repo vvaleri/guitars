@@ -23,13 +23,11 @@ const List = styled.ul`
 
 const Item = styled.li`
   font-size: 36px;
-  font-family: 'Gin-Regular', sans-serif;
   text-transform: uppercase;
 
   a {
     text-decoration: none;
     color: #fff;
-    
   }
 `;
 
