@@ -13,11 +13,11 @@ const Img = styled.div`
 `;
 const Price = styled.span`
   font-size: 18px;
-  font-weight: 700;
 `;
 
 const Title = styled.h2`
-  font-weight: 700;
+  font-family: 'Gibson';
+  font-weight: 400;
 `;
 
 const Buttons = styled.div`

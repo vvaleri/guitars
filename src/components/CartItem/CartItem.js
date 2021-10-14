@@ -1,4 +1,5 @@
 import { Container, Img, Title, Price, Buttons, Delete } from './style/cartItem';
+import icon from '../../img/icon-delete.svg';
 
 export function CartItem({ product }) {
   return (
@@ -13,7 +14,7 @@ export function CartItem({ product }) {
       </div>
       <Buttons>
         <div>{product.quantity}</div>
-        <Delete><img src="./img/icon-delete.svg" alt="delete" /></Delete>
+        <Delete><img src={icon} alt="delete" /></Delete>
       </Buttons>
     </Container>
   );

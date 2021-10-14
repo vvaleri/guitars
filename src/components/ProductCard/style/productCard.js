@@ -29,6 +29,7 @@ const Content = styled.div`
 
 const Title = styled.h2`
   margin-bottom: 10px;
+  font-family: 'Gibson';
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;

@@ -1,7 +1,8 @@
 import styled from 'styled-components/macro';
+import navbarBg from '../../../img/navbar-bg.png';
 
 const Header = styled.header`
-  background-image: url('./img/navbar-bg.png');
+  background-image: url(${navbarBg});
   background-position: center;
 `;
 
@@ -57,7 +58,7 @@ const Number = styled.span`
   margin-left: 5px;
   color: #fff;
   font-size: 18px;
-  
+  font-family: 'Gibson';
 `;
 
 export { Header, Menu, List, Item, Cart, Number };

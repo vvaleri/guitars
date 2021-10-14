@@ -1,11 +1,24 @@
 import { createGlobalStyle } from 'styled-components';
+import bodyBg from './img/body-bg.png';
+import GinRegular from './fonts/Gin-Regular.woff';
+import Gibson from './fonts/Gibson.woff';
 
 export const GlobalStyles = createGlobalStyle`
 
   @font-face {
-    font-family: 'Gin-Regular';
-    src: local('Gin-Regular'), url('./fonts/Gin-Regular.woff'), format('woff');
-    src: local('Gin-Regular'), url('./fonts/Gin-Regular.woff2'), format('woff2');
+    font-family: 'GinRegular';
+    src: url(${GinRegular}) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+  }
+
+  @font-face {
+    font-family: 'Gibson';
+    src: url(${Gibson}) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
   }
 
   * {
@@ -17,7 +30,8 @@ export const GlobalStyles = createGlobalStyle`
   body {
     overflow-x: hidden;
     height: 100vh;
-    background-image: url('./img/body-bg.png');
+    background-image: url(${bodyBg});
+    font-family: 'GinRegular';
   }
 
   li {

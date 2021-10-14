@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Header, Menu, List, Item, Cart, Number } from './style/navbar';
+import imgCart from '../../img/shopping-cart.svg';
 
 export function Navbar() {
   const { totalQuantity } = useSelector(state => state.cartReducer);
@@ -14,7 +15,7 @@ export function Navbar() {
           </Item>
           <Cart>
             <NavLink exact to="/cart">
-              <img src="./img/shopping-cart.svg" alt="shopping cart" />
+              <img src={imgCart} alt="shopping cart" />
               <Number>{totalQuantity}</Number>
             </NavLink>
           </Cart>

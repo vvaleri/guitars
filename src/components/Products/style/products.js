@@ -5,6 +5,10 @@ const Title = styled.h1`
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
+
+  /* &::before {
+    content: ">>>>>>";
+  } */
 `;
 
 const ProductsList = styled.ul`
