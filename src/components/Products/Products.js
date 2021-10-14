@@ -1,11 +1,11 @@
 import { ProductCard } from '../ProductCard/ProductCard';
-import { ProductsList } from './style/products';
+import { Title, ProductsList } from './style/products';
 import productArr from '../../data/products.json';
 
 export function Products() {
   return (
     <main>
-      <h1>Demo guitars shop</h1>
+      <Title>Acoustic Guitars</Title>
       <ProductsList>
         {
           productArr.map(product => <ProductCard key={product.id} product={product} />)

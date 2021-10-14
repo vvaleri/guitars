@@ -1,10 +1,17 @@
-import { Main, MainTitle, Container, Summary, Title, Count, Number } from './style/cart';
+import { useSelector } from 'react-redux';
+import { CartItem } from '../CartItem/CartItem';
+import { Container, Heading, Items, Summary, Title, Count, Number } from './style/cart';
 
 export function Cart() {
+  const products = useSelector(state => state.cartReducer);
+
   return (
-    <Main>
-      <MainTitle>Shopping cart</MainTitle>
+    <main>
+      <Heading>Your Basket</Heading>
       <Container>
+        <Items>
+          {products.products.map(product => <CartItem key={product.id} product={product} />)}
+        </Items>
         <Summary>
           <Title>Cart Summary</Title>
           <Count>
@@ -13,6 +20,6 @@ export function Cart() {
           </Count>
         </Summary>
       </Container>
-    </Main>
+    </main>
   );
 }

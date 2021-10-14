@@ -35,11 +35,4 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0 auto;
   }
 
-  h1 {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    clip: rect(0 0 0 0);
-  }
 `;

@@ -1,18 +1,27 @@
 import styled from 'styled-components/macro';
 
-const Main = styled.main``;
-
-const MainTitle = styled.h1``;
-
 const Container = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+`;
+
+const Heading = styled.h1`
+  margin-bottom: 25px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+`;
+
+const Items = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 const Summary = styled.div`
   padding: 15px 20px;
   background-color: #fff;
   border-radius: 5px;
+  align-self: flex-start;
 `;
 
 const Title = styled.h2`
@@ -28,4 +37,4 @@ const Number = styled.span`
   font-weight: 700;
 `;
 
-export { Main, MainTitle, Container, Summary, Title, Count, Number };
+export { Container, Heading, Items, Summary, Title, Count, Number };
