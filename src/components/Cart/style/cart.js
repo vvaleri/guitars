@@ -2,7 +2,7 @@ import styled from 'styled-components/macro';
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 const Content = styled.p`
@@ -21,10 +21,11 @@ const Heading = styled.h1`
 const Items = styled.div`
   display: flex;
   flex-direction: column;
+  margin-right: 50px;
 `;
 
 const Summary = styled.div`
-  padding: 15px 20px;
+  padding: 20px 35px;
   background-color: #fff;
   border-radius: 5px;
   align-self: flex-start;
@@ -32,11 +33,12 @@ const Summary = styled.div`
 
 const Title = styled.h2`
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 28px;
 `;
 
 const Count = styled.div`
   text-transform: uppercase;
+  font-size: 20px;
 `;
 
 const Number = styled.span`

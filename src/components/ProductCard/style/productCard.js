@@ -56,7 +56,6 @@ const Btn = styled.button`
   border: none;
   color: #fff;
   background-color: #09d;
-  cursor: pointer;
   outline: none;
   transition: background-color 0.3s;
 

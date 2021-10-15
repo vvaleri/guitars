@@ -27,7 +27,7 @@ export function Cart() {
               <Title>Cart Summary</Title>
               <Count>
                 Total:
-                <Number> 40</Number>
+                <Number>&nbsp;&#163;40</Number>
               </Count>
             </Summary>
           )
