@@ -5,6 +5,12 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
+const Content = styled.p`
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+`;
+
 const Heading = styled.h1`
   margin-bottom: 25px;
   font-size: 40px;
@@ -37,4 +43,4 @@ const Number = styled.span`
   font-weight: 700;
 `;
 
-export { Container, Heading, Items, Summary, Title, Count, Number };
+export { Container, Content, Heading, Items, Summary, Title, Count, Number };
