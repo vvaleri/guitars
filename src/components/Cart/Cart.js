@@ -3,7 +3,7 @@ import { CartItem } from '../CartItem/CartItem';
 import { Container, Content, Heading, Items, Summary, Title, Count, Number } from './style/cart';
 
 export function Cart() {
-  const { products } = useSelector(state => state.cartReducer);
+  const { products, totalPrice } = useSelector(state => state.cartReducer);
 
   return (
     <main>
@@ -27,7 +27,10 @@ export function Cart() {
               <Title>Cart Summary</Title>
               <Count>
                 Total:
-                <Number>&nbsp;&#163;40</Number>
+                <Number>
+                  &nbsp;&#163;
+                  {totalPrice}
+                </Number>
               </Count>
             </Summary>
           )

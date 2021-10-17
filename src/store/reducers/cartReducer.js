@@ -1,6 +1,7 @@
 const defaultState = {
   products: [],
-  totalQuantity: 0
+  totalQuantity: 0,
+  totalPrice: 0
 };
 
 const ADD_TO_CART = 'ADD_TO_CART';
@@ -13,16 +14,21 @@ const cartReducer = (state = defaultState, action) => {
   switch (action.type) {
     case ADD_TO_CART:
       if (itemExist) {
+        const priceItem = state.totalPrice + product.price * product.quantity;
         return {
           ...state,
           products: state.products.map(item => item.id === product.id
-            ? { ...product, quantity: item.quantity + 1 }
+            ? { ...product, quantity: item.quantity + 1, totalPrice: priceItem }
             : item),
-          totalQuantity: total
+          totalQuantity: total,
+          totalPrice: priceItem
         };
       }
       return {
-        ...state, products: [...state.products, action.payload], totalQuantity: total
+        ...state,
+        products: [...state.products, action.payload],
+        totalQuantity: total,
+        totalPrice: state.totalPrice + product.price * product.quantity
       };
 
     default:
