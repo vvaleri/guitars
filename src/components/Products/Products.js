@@ -1,14 +1,16 @@
+import { useSelector } from 'react-redux';
 import { ProductCard } from '../ProductCard/ProductCard';
 import { Title, ProductsList } from './style/products';
-import productArr from '../../data/products.json';
 
 export function Products() {
+  const { products } = useSelector(state => state.productReducer);
+
   return (
     <main>
       <Title>Acoustic Guitars</Title>
       <ProductsList>
         {
-          productArr.map(product => <ProductCard key={product.id} product={product} />)
+          products.map(product => <ProductCard key={product.id} product={product} />)
         }
       </ProductsList>
     </main>

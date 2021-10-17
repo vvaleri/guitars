@@ -5,14 +5,7 @@ export function ProductCard({ product }) {
   const dispatch = useDispatch();
 
   const addToCart = () => {
-    const productItem = {
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      img: product.img,
-      quantity: 1
-    };
-    dispatch({ type: 'ADD_TO_CART', payload: productItem });
+    dispatch({ type: 'ADD_TO_CART', payload: product });
   };
 
   return (
