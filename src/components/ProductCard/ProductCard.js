@@ -4,10 +4,6 @@ import { Item, Img, Content, Title, Price, Buttons, Btn } from './style/productC
 export function ProductCard({ product }) {
   const dispatch = useDispatch();
 
-  const addToCart = () => {
-    dispatch({ type: 'ADD_TO_CART', payload: product });
-  };
-
   return (
     <Item>
       <Img><img src={product.img} alt={product.alt} /></Img>
@@ -19,7 +15,7 @@ export function ProductCard({ product }) {
         </Price>
         <Buttons>
           <Btn>Open</Btn>
-          <Btn onClick={() => addToCart()}>Add to cart</Btn>
+          <Btn onClick={() => dispatch({ type: 'ADD_TO_CART', payload: product })}>Add to cart</Btn>
         </Buttons>
       </Content>
     </Item>
