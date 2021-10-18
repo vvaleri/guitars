@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     src: url(${GinRegular}) format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
   }
 
   @font-face {
@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     src: url(${Gibson}) format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
   }
 
   * {
