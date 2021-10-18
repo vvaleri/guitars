@@ -7,7 +7,7 @@ export const Cart = () => {
 
   return (
     <main>
-      <Heading>Your Basket</Heading>
+      <Heading><span>Your Basket</span></Heading>
       <Container>
         {
           products.length > 0

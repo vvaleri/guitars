@@ -5,22 +5,47 @@ const Container = styled.div`
   padding: 15px;
   margin-bottom: 20px;
   background-color: #fff;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
 const Img = styled.div`
   width: 100px;
   height: 100px;
   margin-right: 20px;
+
+  @media (max-width: 1024px) {
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+    align-self: center;
+  }
 `;
 
 const Content = styled.div`
   flex-grow: 1;
   max-width: 500px;
   margin-right: 20px;
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+    text-align: center;
+  }
 `;
 
 const Price = styled.span`
   font-size: 22px;
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 `;
 
 const Title = styled.h2`
@@ -28,6 +53,11 @@ const Title = styled.h2`
   font-family: 'Gibson';
   font-size: 20px;
   font-weight: 400;
+
+  @media (max-width: 767px) {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
 `;
 
 const Buttons = styled.div`
