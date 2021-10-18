@@ -8,6 +8,21 @@ const Item = styled.li`
   margin-right: 35px;
   margin-bottom: 35px;
   background-color: #fff;
+
+  @media (max-width: 1179px) {
+    width: calc(33.3% - 20px);
+    margin-right: 20px;
+  }
+
+  @media (max-width: 1023px) {
+    width: calc(50% - 20px);
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 `;
 
 const Img = styled.div`
@@ -16,6 +31,11 @@ const Img = styled.div`
   img {
     width: 300px;
     height: 300px;
+
+    @media (max-width: 767px) {
+      width: 200px;
+      height: 200px;
+    }
   }
 `;
 
@@ -34,6 +54,11 @@ const Title = styled.h2`
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+
+  @media (max-width: 767px) {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
 `;
 
 const Price = styled.p`
@@ -43,6 +68,10 @@ const Price = styled.p`
   font-size: 32px;
   font-weight: 700;
   flex: 1 0 auto;
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
 `;
 
 const Buttons = styled.div`
@@ -68,6 +97,17 @@ const Btn = styled.button`
     :focus {
       background-color: #1974d2;
     }
+  }
+
+  @media (max-width: 1179px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
   }
 `;
 

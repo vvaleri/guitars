@@ -7,7 +7,7 @@ export const Products = () => {
 
   return (
     <main>
-      <Title>Acoustic Guitars</Title>
+      <Title><span>Acoustic Guitars</span></Title>
       <ProductsList>
         {
           products.map(product => <ProductCard key={product.id} product={product} />)

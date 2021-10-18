@@ -46,6 +46,11 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 1360px;
     padding: 40px 60px 20px;
     margin: 0 auto;
+
+    @media (max-width: 1179px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   button {

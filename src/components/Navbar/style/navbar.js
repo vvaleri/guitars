@@ -11,8 +11,14 @@ const Menu = styled.nav`
   padding: 30px 60px;
   margin: 0 auto;
   
-  @media(max-width: 426px) {
-    padding: 30px 20px;
+  @media(max-width: 1179px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 `;
 
@@ -26,6 +32,10 @@ const Item = styled.li`
   font-size: 36px;
   text-transform: uppercase;
 
+  @media (max-width: 767px) {
+    font-size: 26px;
+  }
+
   a {
     text-decoration: none;
     color: #fff;
@@ -37,9 +47,19 @@ const Cart = styled.li`
   height: 45px;
   display: flex;
 
+  @media (max-width: 767px) {
+    width: 50px;
+    height: 35px;
+
+  }
+
   img {
     width: 30px;
     height: 26px;
+
+    @media (max-width: 767px) {
+      width: 20px;
+    }
   }
 
   a {
@@ -59,6 +79,10 @@ const Number = styled.span`
   color: #fff;
   font-size: 18px;
   font-family: 'Gibson';
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
 `;
 
 export { Header, Menu, List, Item, Cart, Number };
