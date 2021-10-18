@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { ProductCard } from '../ProductCard/ProductCard';
 import { Title, ProductsList } from './style/products';
 
-export function Products() {
+export const Products = () => {
   const { products } = useSelector(state => state.productReducer);
 
   return (
@@ -15,4 +15,4 @@ export function Products() {
       </ProductsList>
     </main>
   );
-}
+};

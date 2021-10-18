@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { Header, Menu, List, Item, Cart, Number } from './style/navbar';
 import imgCart from '../../img/shopping-cart.svg';
 
-export function Navbar() {
+export const Navbar = () => {
   const { totalQuantity } = useSelector(state => state.cartReducer);
 
   return (
@@ -23,4 +23,4 @@ export function Navbar() {
       </Menu>
     </Header>
   );
-}
+};

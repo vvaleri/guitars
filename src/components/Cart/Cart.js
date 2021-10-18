@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { CartItem } from '../CartItem/CartItem';
 import { Container, Content, Heading, Items, Summary, Title, Count, Number } from './style/cart';
 
-export function Cart() {
+export const Cart = () => {
   const { products, totalPrice } = useSelector(state => state.cartReducer);
 
   return (
@@ -38,4 +38,4 @@ export function Cart() {
       </Container>
     </main>
   );
-}
+};

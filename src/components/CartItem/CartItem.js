@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { Container, Img, Content, Title, Price, Buttons, Quantity, Btn, Delete } from './style/cartItem';
 import icon from '../../img/icon-delete.svg';
 
-export function CartItem({ product }) {
+export const CartItem = ({ product }) => {
   const dispatch = useDispatch();
 
   return (
@@ -25,4 +25,4 @@ export function CartItem({ product }) {
       </Buttons>
     </Container>
   );
-}
+};

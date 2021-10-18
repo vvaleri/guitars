@@ -4,7 +4,7 @@ import { Item, Img, Content, Title, Price, Buttons, Btn } from './style/productC
 import { ProductModal } from '../ProductModal/ProductModal';
 import useScrollBlock from '../../hook/useScrollBlock';
 
-export function ProductCard({ product }) {
+export const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   const [modal, setModal] = useState(false);
   const [blockScroll, allowScroll] = useScrollBlock();
@@ -31,4 +31,4 @@ export function ProductCard({ product }) {
       <ProductModal product={product} setModal={setModal} modal={modal} allowScroll={allowScroll} />
     </Item>
   );
-}
+};
