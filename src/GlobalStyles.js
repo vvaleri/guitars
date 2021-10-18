@@ -29,7 +29,6 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     overflow-x: hidden;
-    height: 100vh;
     background-image: url(${bodyBg});
     font-family: 'GinRegular';
   }

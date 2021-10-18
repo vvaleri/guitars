@@ -13,6 +13,7 @@ const Title = styled.h1`
 
 const ProductsList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   width: calc(100% + 35px);
   margin-bottom: -35px;
 `;

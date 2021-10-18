@@ -1,8 +1,18 @@
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Item, Img, Content, Title, Price, Buttons, Btn } from './style/productCard';
+import { ProductModal } from '../ProductModal/ProductModal';
+import useScrollBlock from '../../hook/useScrollBlock';
 
 export function ProductCard({ product }) {
   const dispatch = useDispatch();
+  const [modal, setModal] = useState(false);
+  const [blockScroll, allowScroll] = useScrollBlock();
+
+  const openModal = () => {
+    setModal(true);
+    blockScroll();
+  };
 
   return (
     <Item>
@@ -14,10 +24,11 @@ export function ProductCard({ product }) {
           {product.price}
         </Price>
         <Buttons>
-          <Btn>Open</Btn>
+          <Btn onClick={openModal}>Quick view</Btn>
           <Btn onClick={() => dispatch({ type: 'ADD_TO_CART', payload: product })}>Add to cart</Btn>
         </Buttons>
       </Content>
+      <ProductModal product={product} setModal={setModal} modal={modal} allowScroll={allowScroll} />
     </Item>
   );
 }
