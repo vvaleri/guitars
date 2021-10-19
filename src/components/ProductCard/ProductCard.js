@@ -16,7 +16,7 @@ export const ProductCard = ({ product }) => {
 
   return (
     <Item>
-      <Img><img src={product.img} alt={product.alt} /></Img>
+      <Img><img src={`${process.env.PUBLIC_URL}${product.img}`} alt={product.alt} /></Img>
       <Content>
         <Title>{product.name}</Title>
         <Price>

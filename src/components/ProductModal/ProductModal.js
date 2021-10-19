@@ -33,7 +33,7 @@ export const ProductModal = ({ product, setModal, modal, allowScroll }) => {
             <Wrap>
               <Overlay onClick={closeModal} />
               <Container>
-                <Img><img src={product.img} alt={product.alt} /></Img>
+                <Img><img src={`${process.env.PUBLIC_URL}${product.img}`} alt={product.alt} /></Img>
                 <Content>
                   <Status>{product.status}</Status>
                   <Title>{product.name}</Title>
