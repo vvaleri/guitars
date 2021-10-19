@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/guitars/static/js/main.bdfc790b.chunk.js",
-    "main.js.map": "/guitars/static/js/main.bdfc790b.chunk.js.map",
+    "main.js": "/guitars/static/js/main.d2567823.chunk.js",
+    "main.js.map": "/guitars/static/js/main.d2567823.chunk.js.map",
     "runtime-main.js": "/guitars/static/js/runtime-main.eaf00095.js",
     "runtime-main.js.map": "/guitars/static/js/runtime-main.eaf00095.js.map",
     "static/js/2.05d739a3.chunk.js": "/guitars/static/js/2.05d739a3.chunk.js",
@@ -11,13 +11,13 @@
     "static/media/Gibson.a87efa54.woff": "/guitars/static/media/Gibson.a87efa54.woff",
     "static/media/Gin-Regular.54dbdb79.woff": "/guitars/static/media/Gin-Regular.54dbdb79.woff",
     "static/media/body-bg.8cacebd3.png": "/guitars/static/media/body-bg.8cacebd3.png",
+    "static/media/guitar-img-1.40f0c9f8.jpg": "/guitars/static/media/guitar-img-1.40f0c9f8.jpg",
     "static/media/icon-delete.ca00b527.svg": "/guitars/static/media/icon-delete.ca00b527.svg",
-    "static/media/navbar-bg.bb8d47c7.png": "/guitars/static/media/navbar-bg.bb8d47c7.png",
     "static/media/shopping-cart.891d6e79.svg": "/guitars/static/media/shopping-cart.891d6e79.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.eaf00095.js",
     "static/js/2.05d739a3.chunk.js",
-    "static/js/main.bdfc790b.chunk.js"
+    "static/js/main.d2567823.chunk.js"
   ]
 }
