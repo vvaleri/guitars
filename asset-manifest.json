@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/guitars/static/js/main.a034ae57.chunk.js",
-    "main.js.map": "/guitars/static/js/main.a034ae57.chunk.js.map",
+    "main.js": "/guitars/static/js/main.af2a31c4.chunk.js",
+    "main.js.map": "/guitars/static/js/main.af2a31c4.chunk.js.map",
     "runtime-main.js": "/guitars/static/js/runtime-main.eaf00095.js",
     "runtime-main.js.map": "/guitars/static/js/runtime-main.eaf00095.js.map",
-    "static/js/2.78051c64.chunk.js": "/guitars/static/js/2.78051c64.chunk.js",
-    "static/js/2.78051c64.chunk.js.map": "/guitars/static/js/2.78051c64.chunk.js.map",
+    "static/js/2.05d739a3.chunk.js": "/guitars/static/js/2.05d739a3.chunk.js",
+    "static/js/2.05d739a3.chunk.js.map": "/guitars/static/js/2.05d739a3.chunk.js.map",
     "index.html": "/guitars/index.html",
-    "static/js/2.78051c64.chunk.js.LICENSE.txt": "/guitars/static/js/2.78051c64.chunk.js.LICENSE.txt",
+    "static/js/2.05d739a3.chunk.js.LICENSE.txt": "/guitars/static/js/2.05d739a3.chunk.js.LICENSE.txt",
     "static/media/Gibson.a87efa54.woff": "/guitars/static/media/Gibson.a87efa54.woff",
     "static/media/Gin-Regular.54dbdb79.woff": "/guitars/static/media/Gin-Regular.54dbdb79.woff",
     "static/media/body-bg.8cacebd3.png": "/guitars/static/media/body-bg.8cacebd3.png",
@@ -17,7 +17,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eaf00095.js",
-    "static/js/2.78051c64.chunk.js",
-    "static/js/main.a034ae57.chunk.js"
+    "static/js/2.05d739a3.chunk.js",
+    "static/js/main.af2a31c4.chunk.js"
   ]
 }
