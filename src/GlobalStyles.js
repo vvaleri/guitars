@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import bodyBg from './img/body-bg.png';
+import bodyBg from './img/body-bg.jpg';
 import GinRegular from './fonts/Gin-Regular.woff';
 import Gibson from './fonts/Gibson.woff';
 
@@ -30,6 +30,8 @@ export const GlobalStyles = createGlobalStyle`
   body {
     overflow-x: hidden;
     background-image: url(${bodyBg});
+    background-repeat: repeat;
+    background-color: #C4C4C4;
     font-family: 'GinRegular';
   }
 

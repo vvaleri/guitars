@@ -1,9 +1,11 @@
 import styled from 'styled-components/macro';
-import navbarBg from '../../../img/navbar-bg.png';
+import navbarBg from '../../../img/navbar-bg.jpg';
 
 const Header = styled.header`
   background-image: url(${navbarBg});
+  background-repeat: repeat;
   background-position: center;
+  background-color: #000;
 `;
 
 const Menu = styled.nav`
