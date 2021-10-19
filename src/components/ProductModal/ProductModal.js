@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'framer-motion';
-import { Modal, Overlay, Wrap, Container, CloseButton, Img, Content, Status, Title, Text } from './style/productModal';
+import { Modal, Overlay, Wrap, Container, CloseButton, Img, Content, Status, Title, Text, CloseMobile } from './style/productModal';
 
 export const ProductModal = ({ product, setModal, modal, allowScroll }) => {
   const container = {
@@ -38,6 +38,7 @@ export const ProductModal = ({ product, setModal, modal, allowScroll }) => {
                   <Status>{product.status}</Status>
                   <Title>{product.name}</Title>
                   <Text>{product.text}</Text>
+                  <CloseMobile onClick={closeModal}>Close</CloseMobile>
                 </Content>
                 <CloseButton onClick={closeModal}>&#10006;</CloseButton>
               </Container>

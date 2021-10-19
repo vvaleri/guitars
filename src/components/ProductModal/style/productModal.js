@@ -30,6 +30,13 @@ const Wrap = styled.div`
   min-height: 100%;
   padding: 60px 40px;
 
+  @media (max-width: 1023px) {
+    padding: 30px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
 `;
 
 const Overlay = styled.div`
@@ -45,6 +52,11 @@ const Container = styled.div`
   display: flex;
   min-width: 400px;
   background-color: #fff;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    min-width: 100%;
+  }
 `;
 
 const Img = styled.div`
@@ -52,6 +64,17 @@ const Img = styled.div`
   align-items: center;
   padding: 20px;
   max-width: 400px;
+
+  @media (max-width: 1023px) {
+    flex: 1 0 270px;
+  }
+
+  @media (max-width: 767px) {
+    align-self: center;
+    flex: 1 0 auto;
+    width: 250px;
+    height: 250px;
+  }
 `;
 
 const Content = styled.div`
@@ -60,18 +83,32 @@ const Content = styled.div`
   max-width: 500px;
   padding: 30px 40px;
   background-color: #e7e7e7;
+
+  @media (max-width: 767px) {
+    padding: 20px;
+    max-width: 100%;
+  }
 `;
 
 const Status = styled.span`
   margin-bottom: 15px;
   color: #0099dd;
   font-size: 21px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
 `;
 
 const Title = styled.p`
   margin-bottom: 15px;
   font-size: 30px;
 
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
 `;
 
 const Text = styled.p`
@@ -79,6 +116,10 @@ const Text = styled.p`
   font-family: 'Gibson';
   font-size: 18px;
   line-height: 1.4;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
 `;
 
 const CloseButton = styled.button`
@@ -99,4 +140,28 @@ const CloseButton = styled.button`
   }
 `;
 
-export { Modal, Wrap, Overlay, Container, CloseButton, Img, Content, Status, Title, Text };
+const CloseMobile = styled.button`
+  display: none;
+
+  @media (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #0099dd;
+    border: none;
+    color: #fff;
+  }
+`;
+
+export { Modal,
+  Wrap,
+  Overlay,
+  Container,
+  CloseButton,
+  Img,
+  Content,
+  Status,
+  Title,
+  Text,
+  CloseMobile };
